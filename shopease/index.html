@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase — E-Commerce Product Catalog</title>
+  <meta name="description" content="A modular e-commerce product catalog with client-side hash routing, category filters, cart management, and responsive design.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation (3-Zone Contract) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="#/" class="brand-wordmark">ShopEase</a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="site-nav">
+        <a href="#/" class="nav-link active">Home</a>
+        <a href="#/products" class="nav-link">Catalog</a>
+      </nav>
+
+      <!-- Zone 3: Primary Action (Shopping Bag) -->
+      <div class="header-actions">
+        <a href="#/cart" class="cart-btn" aria-label="Shopping Bag">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span>Bag</span>
+          <span class="cart-badge tabular-nums">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Mount (Rendered dynamically by router and app.js) -->
+  <main id="app">
+    <!-- Content injected dynamically via js/app.js -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>ShopEase</h4>
+          <p style="font-size: 0.75rem; line-height: 1.6;">
+            A modern, modular e-commerce product catalog designed as a Web Development Capstone Project.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/products">Product Catalog</a></li>
+            <li><a href="#/cart">Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#/products">Audio & Tech</a></li>
+            <li><a href="#/products">Accessories</a></li>
+            <li><a href="#/products">Carry Goods</a></li>
+            <li><a href="#/products">Home & Living</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Project</h4>
+          <p style="font-size: 0.75rem; line-height: 1.6;">
+            Demonstrates modular file architecture, zero-dependency client-side routing (<code>location.hash</code>), and asset optimization.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ShopEase Storefront. All rights reserved.</p>
+        <p>Built for Web Development Capstone Evaluation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modular Scripts in Execution Sequence -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

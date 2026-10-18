@@ -1,0 +1,8 @@
+{
+  "name": "ShopEase - Modern E-Commerce Catalog & Storefront",
+  "description": "A high-performance, modular e-commerce product catalog with client-side hash routing, category filters, interactive cart, responsive design, and product details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
